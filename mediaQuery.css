@@ -1,0 +1,143 @@
+@media screen and (max-width: 450px) {
+
+
+.deskstop-nav-links{
+        display: none;
+}
+
+.hamburger-nav-links{
+    display: block;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/* section {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+  } */
+
+  .section-one-container {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .section-one-info-container {
+    padding: 1rem 0;
+  }
+
+  .section-one-info-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-one-pic {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .section-two{
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .section-two-title h1{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .section-two-container{
+    padding: 1rem 0;
+  }
+
+  .unknow-one{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .template{
+    width: 100%;
+  }
+
+  .section-three{
+    height: auto;
+    min-height: 100vh;
+    padding: 1rem 0rem;
+  }
+
+  .section-three-container{
+    flex-direction: column;
+  }
+
+   .section-three-pic-container{
+    width: 80%;
+}
+
+  .section-three-pic {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .section-three-info-container{
+    padding: 0rem;
+    width: 80%;
+  }
+
+  .section-four{
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .section-four-title{
+    padding: 0rem;
+  }
+
+  .unknow-two{
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .pic-template{
+    width: 100%;
+    padding: 0.4rem;
+  }
+
+  .pic-template-png{
+    width: 80%;
+    height: 60%;
+  }  
+
+  .pic-template-card , .pic-template-card div{
+    font-size: 0.8rem;
+  }
+
+  .pic-template:hover{
+    transform: scale(1.1) ;  
+}
+
+
+footer{
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 1rem ;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+.footer-two{
+    margin-top: 0.5rem;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+}
