@@ -16,11 +16,11 @@
     padding: 1rem 2rem;
 }
 
-/* section {
-    height: auto;
-    min-height: 100vh;
-    padding-bottom: 2rem;
-  } */
+.section-one{
+  height: auto;
+  min-height: 100vh;
+  padding: 1rem 1.5rem;
+}
 
   .section-one-container {
     flex-direction: column-reverse;
