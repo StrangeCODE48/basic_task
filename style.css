@@ -8,6 +8,62 @@
 
 body{
     font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+.right{
+    transform: translateX(30vw);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.right-show{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.pop{
+    transform: translatey(-5vw);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.pop-show{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.left{
+    transform: translatex(-5vw);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.left-show{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.top{
+    transform: translatey(-2vw);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.top-show{
+    transform: translatey(0);
+    opacity: 1;
+}
+
+.nav-left{
+    transform: translatex(50vw);
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.nav-left-show{
+    transform: translatex(0);
+    opacity: 1;
 }
 
 .header{
@@ -89,7 +145,16 @@ body{
 .nav-links{
     position: absolute;
     z-index: 1;
+    right: -1rem;
+    top: 2rem;
+    padding: 2rem;
+    background-color: #cfd0d0;
+    border-radius: 1rem;
     display: none;
+}
+
+.hamburger-btn{
+    margin-top: 2rem
 }
 
 
@@ -99,7 +164,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 1rem;
     flex-direction: column;
     font-weight: 500;
 }
@@ -136,6 +201,30 @@ body{
 .btn:hover{
     background-color: #4ce351;
 }
+
+@keyframes blink {
+    0%{
+        bottom: 0rem;
+        position: relative;
+        transform: scale(1);  
+    }
+    50%{
+        bottom: -1rem;
+        position: relative;
+        transform: scale(1.2);
+    }
+    100%{
+        bottom: 0rem;
+        position: relative;
+        transform: scale(1);
+    }
+}
+
+button:focus{
+   animation: blink 1s ease-in-out;
+}
+
+
 
 .icon-png{
     width: 1.2rem;
@@ -198,6 +287,14 @@ section{
     flex-direction: column;
 }
 
+.section-two-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 .section-two-title{
     width: 100%;
     display: flex;
@@ -220,7 +317,14 @@ section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 2rem;
+}
+
+.unknow-one :nth-child(2){
+    transition-delay:400ms ;
+}
+
+.unknow-one :nth-child(3){
+    transition-delay:800ms ;
 }
 
 .template{
@@ -234,6 +338,23 @@ section{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0.8rem;
     cursor: pointer;
+}
+
+@keyframes hover{
+    0%{
+        position: relative;
+        bottom: 0rem;
+        transform: scale(1);
+    }
+    100%{
+        position: relative;
+        bottom: 1rem;
+        transform: scale(1.1);
+    }
+}
+
+.template:hover{
+    animation: hover 0.5s ease-in-out forwards;
 }
 
 .template-png{
@@ -269,11 +390,11 @@ section{
     width: 40%;
 }
 
-.section-three-info-container{
+.section-three-info-container {
     width: 50%;
     display: flex;
     align-items: flex-start;
-    justify-content: center ;
+    justify-content: center;
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
@@ -322,6 +443,14 @@ section{
     margin-top: 2rem;
 }
 
+.unknow-two :nth-child(2){
+    transition-delay:400ms ;
+}
+
+.unknow-two :nth-child(3){
+    transition-delay:800ms ;
+}
+
 .pic-template{
     position: relative;
     width: 80%;
@@ -361,9 +490,6 @@ section{
     font-size: 1.2rem;
     font-weight: 600;
     color: #777a7e;
-}
-
-.pic-template-card :nth-child(2){
     color: #4CAF4F;
     margin-top: 2rem;
 }
@@ -410,6 +536,17 @@ footer{
     gap: 0.5rem;
 }
 
+.socal-media :nth-child(2){
+    transition-delay:200ms ;
+}
+
+.socal-media :nth-child(3){
+    transition-delay:600ms ;
+}
+.socal-media :nth-child(4){
+    transition-delay:1000ms ;
+}
+
 .socal-media div{
     display: flex;
     justify-content: center;
@@ -447,6 +584,39 @@ footer{
     color: #979ca2;
     font-weight: 500;
 }
+
+.company ul :nth-child(2){
+    transition-delay:200ms ;
+}
+
+.company ul :nth-child(3){
+    transition-delay:400ms ;
+}
+.company ul :nth-child(4){
+    transition-delay:600ms ;
+}
+.company ul :nth-child(5){
+    transition-delay:800ms ;
+}
+
+
+
+.support ul :nth-child(4){
+    transition-delay:200ms ;
+}
+
+.support ul :nth-child(3){
+    transition-delay:400ms ;
+}
+.support ul :nth-child(2){
+    transition-delay:600ms ;
+}
+.support ul :nth-child(1){
+    transition-delay:800ms ;
+}
+
+
+
 
 .contact{
     display: flex;
