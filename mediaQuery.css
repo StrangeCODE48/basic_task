@@ -54,14 +54,15 @@
     padding: 1rem 0;
   }
 
-  .unknow-one{
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .template{
-    width: 100%;
-  }
+.unknow-one{
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  
+    .template{
+      width: 90%;
+    }
 
   .section-three{
     height: auto;
